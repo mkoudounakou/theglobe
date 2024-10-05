@@ -1,0 +1,36 @@
+{
+  "name": "theglobe",
+  "version": "1.0.0",
+  "description": "Choices Matter Text-Based Educational Game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkoudounakou/theglobe.git"
+  },
+  "keywords": [
+    "GLOBE",
+    "Discord",
+    "API",
+    "Choices",
+    "Matter",
+    "Text-Based",
+    "Educational",
+    "Game",
+    "Weather",
+    "Sciences",
+    "NASA",
+    "Space",
+    "Apps",
+    "2024",
+    "NodeJS"
+  ],
+  "author": "Maria Koudounakou, Christopher Graham-Ozanne, George Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkoudounakou/theglobe/issues"
+  },
+  "homepage": "https://github.com/mkoudounakou/theglobe#readme"
+}
