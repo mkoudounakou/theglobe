@@ -4,7 +4,8 @@
   "description": "Choices Matter Text-Based Educational Game",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -32,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/mkoudounakou/theglobe/issues"
   },
-  "homepage": "https://github.com/mkoudounakou/theglobe#readme"
+  "homepage": "https://github.com/mkoudounakou/theglobe#readme",
+  "dependencies": {
+    "discord.js": "^14.16.3"
+  }
 }
