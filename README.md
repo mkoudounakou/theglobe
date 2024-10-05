@@ -19,13 +19,6 @@ To achieve these goals, we’ve developed an interactive educational game center
 
 Nodejs, Discordjs
 
-
 ## License
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
-
-## Creators
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
