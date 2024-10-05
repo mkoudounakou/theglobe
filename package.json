@@ -9,26 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mkoudounakou/theglobe.git"
+    "url": "git+https://github.com/mkoudounakou/timeLoopSimulator.git"
   },
   "keywords": [
-    "GLOBE",
-    "Discord",
-    "API",
-    "Choices",
-    "Matter",
-    "Text-Based",
-    "Educational",
-    "Game",
-    "Weather",
-    "Sciences",
-    "NASA",
-    "Space",
-    "Apps",
-    "2024",
-    "NodeJS"
+    "nodejs",
+    "discord-js",
+    "nasa-spaceapps-challenge",
+    "metoffice",
+    "globe-project"
   ],
-  "author": "Maria Koudounakou, Christopher Graham-Ozanne, George Smith",
+  "author": "Maria Koudounakou (mkoudounakou@live.co.uk), Christopher Graham-Ozanne (c.grahamozanne@gmail.com), George Smith (gbs.psychology@gmail.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mkoudounakou/theglobe/issues"
