@@ -1,7 +1,7 @@
 {
-  "name": "theglobe",
+  "name": "timeloopsimulator",
   "version": "1.0.0",
-  "description": "Choices Matter Text-Based Educational Game",
+  "description": "Educational \"Choices Matter\" Game raising awareness of environmental issues within our local communities, created on the 5th-6th October 2024 for the NASA Space Apps Challenge (UK Exeter Event) in connection with the GLOBE Program (Global Learning and Observations to Benefit the Environment).",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
