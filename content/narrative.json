@@ -1,0 +1,121 @@
+{
+  0: {
+    "date": "2024-10-06",
+    "heading": "Welcome",
+    "body": [
+      "Welcome to the GLOBE Protocol Time Loop Simulation unit! Here you can experience extreme weather events from the past and attempt to mitigate their effects using your own knowledge.",
+      "For each extreme weather event you will be given a budget which you can allocate to combat the disaster. You will be evaluated on your ability to mitigate damage and preserve human life."
+    ],
+    "options": [
+      "play",
+      "rules",
+      "exit"
+    ]
+  },
+  1: {
+    "date": "YYYY-MM-DD",
+    "heading": "Group Task",
+    "body": [
+      "Today we’ll be simulating the 1952 Lynmouth Flood. You have been tasked with assessing the effectiveness of modern flood prevention and mitigation techniques on this extreme weather event.",
+      "Over the course of 5 rounds you’ll have the option to spend money on various projects meant to prepare Lynmouth for the oncoming flood. Keep in mind how long they take to implement, as leaving a big project to the last minute may incur dire consequences."
+    ],
+    "options": []
+  },
+  1: {
+    "date": "YYYY-MM-DD",
+    "heading": "Round 1",
+    "body": [
+      "You now have the opportunity to implement a preventative project. This will help you as the disaster progresses.",
+      "Please can the committee chair select two of the available options to present for a vote.."
+    ],
+    "options": "${actions}"
+  },
+  1: {
+    "date": "YYYY-MM-DD",
+    "heading": "Round 2",
+    "body": [
+      "You now have the opportunity to implement a preventative project. This will help you as the disaster progresses.",
+      "Please can the committee chair select two of the available options to present for a vote.."
+    ],
+    "options": "${actions}"
+  },
+  1: {
+    "date": "YYYY-MM-DD",
+    "heading": "Round 3",
+    "body": [
+      "You now have the opportunity to implement a preventative project. This will help you as the disaster progresses.",
+      "Please can the committee chair select two of the available options to present for a vote.."
+    ],
+    "options": "${actions}"
+  },
+  1: {
+    "date": "YYYY-MM-DD",
+    "heading": "Round 4",
+    "body": [
+      "You now have the opportunity to implement a preventative project. This will help you as the disaster progresses.",
+      "Please can the committee chair select two of the available options to present for a vote.."
+    ],
+    "options": "${actions}"
+  },
+  1: {
+    "date": "YYYY-MM-DD",
+    "heading": "Round 5",
+    "body": [
+      "You now have the opportunity to implement a preventative project. This will help you as the disaster progresses.",
+      "Please can the committee chair select two of the available options to present for a vote.."
+    ],
+    "options": "${actions}"
+  },
+  1: {
+    "date": "YYYY-MM-DD",
+    "heading": "Round 6",
+    "body": [
+      "You now have the opportunity to implement a preventative project. This will help you as the disaster progresses.",
+      "Please can the committee chair select two of the available options to present for a vote.."
+    ],
+    "options": "${actions}"
+  },
+  1: {
+    "date": "YYYY-MM-DD",
+    "heading": "Round 7",
+    "body": [
+      "You now have the opportunity to implement a preventative project. This will help you as the disaster progresses.",
+      "Please can the committee chair select two of the available options to present for a vote.."
+    ],
+    "options": "${actions}"
+  },
+  1: {
+    "date": "YYYY-MM-DD",
+    "heading": "Round 8",
+    "body": [
+      "You now have the opportunity to implement a preventative project. This will help you as the disaster progresses.",
+      "Please can the committee chair select two of the available options to present for a vote.."
+    ],
+    "options": "${actions}"
+  },
+  1: {
+    "date": "1952-08-15",
+    "heading": "Case Study",
+    "body": [
+      "You’ve done all you can and now it’s time to see how your planning will affect the oncoming flood. First we’ll explore the story of the real 1952 flood.",
+      "On a cold dark August night a low pressure front crossed the Atlantic Ocean, bringing a wave of heavy rainfall with it. In the days leading up to the night of the 15th, the weather had been wet, soaking the ground and waterlogging the surrounding terrain. The rainfall reached the British coast as the sun was beginning to set. Within hours, hundreds of thousands of tons of water had been released from the clouds, rushing down the hills and through the valleys into the river Lyn.",
+      "This immense volume of water surged down the river's course, breaking its banks and dragging great boulders and trees with it, even sending thousands of square feet of peat downstream towards Lynmouth.",
+      "The flood of water and debris battered the town, causing the deaths of 34 people. The flooding also caused the collapse of 39 buildings and 28 of the 31 local bridges.",
+      "When the flooding subsided and dawn broke, most of the town had been destroyed. Many of the houses had had their foundations ripped out from under them and a number of cars were dragged out to sea. Towns all over the coast had felt the wrath of the flooding but none more than Lynmouth."
+    ],
+    "options": []
+  },
+  1: {
+    "date": "2024-10-06",
+    "heading": "Comparison",
+    "body": [
+      "Now that you know what really happened, let’s see how your improvements would have changed the outcome.",
+      "${evaluation}"
+    ],
+    "options": [
+      "play again",
+      "rules",
+      "exit"
+    ]
+  },
+}

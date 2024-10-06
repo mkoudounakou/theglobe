@@ -1,9 +1,9 @@
 const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
-	name: "start",
-	description: "Begin interactive learning exercise",
+	name: "rules",
+	description: "rules rules rules",
 	execute: async(interaction) => {
-		await interaction.reply('Lets begin');
+		await interaction.reply('rules');
 	}
 }

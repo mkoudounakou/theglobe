@@ -1,7 +1,7 @@
-const fs = require('fs'); //require('node:fs');
-const path = require('path'); //require('node:path');
-const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const { token } = require('./config.json');
+const fs = require('fs');
+const path = require('path');
+const { Client, Collection, Events, GatewayIntentBits, REST, Routes } = require('discord.js');
+const { token, client_id, guild_id } = require('./config.json');
 
 // Create a new client instance
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -18,13 +18,33 @@ for (const folder of commandFolders) {
 		const filePath = path.join(commandsPath, file);
 		const command = require(filePath);
 		// Set a new item in the Collection with the key as the command name and the value as the exported module
-		if ('data' in command && 'execute' in command) {
-			client.commands.set(command.data.name, command);
+		if (command.hasOwnProperty('data') || command.hasOwnProperty('execute')) {
+			client.commands.set(command.name, command);
 		} else {
 			console.log(`[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`);
 		}
 	}
 }
+
+let commands = [...client.commands.values()];
+
+const rest = new REST({ version: '10'}).setToken(token);
+
+(async () => {
+	//try {
+		console.log("registering slash commands..");
+		let commands = [...client.commands.values()];
+		console.log(commands);
+		await rest.put(
+			Routes.applicationGuildCommands(client_id, guild_id), {
+				body: commands
+			}
+		);
+		console.log("slash commands registered successfully.");
+	/*} catch(error) {
+		console.log(`[Error] ${error}`)
+	}*/
+})();
 
 // When the client is ready
 client.once(Events.ClientReady, readyClient => {
@@ -35,6 +55,7 @@ client.once(Events.ClientReady, readyClient => {
 client.on(Events.InteractionCreate, interaction => {
   if (!interaction.isChatInputCommand()) return;
 	console.log(interaction);
+	client.commands.get(interaction.commandName).execute();
 });
 
 // Log in to Discord with your client's token
