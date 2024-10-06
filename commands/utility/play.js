@@ -8,7 +8,12 @@ module.exports = {
 	name: "play",
 	description: "Begin interactive learning exercise",
 	execute: async(interaction) => {
-		await interaction.reply('Lets begin');
+		setConfig({"gameState": true});
+		setConfig({"narrative": 1});
 
+		for(i=0; i < narrative[config.narrative].length; i++){
+			await interaction.reply(narrative[config.narrative].body[i]);
+		}
+		await interaction.reply(narrative[config.narrative].options.Join(" / ") + "?");
 	}
 }

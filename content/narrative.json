@@ -1,5 +1,5 @@
 {
-  1: {
+  "1": {
     "date": "2024-10-06",
     "heading": "Welcome",
     "body": [
@@ -11,9 +11,9 @@
       "rules",
       "exit"
     ],
-    "event": []
+    "event": {}
   },
-  2: {
+  "2": {
     "date": "1927-08-15",
     "heading": "Group Task",
     "body": [
@@ -21,53 +21,53 @@
       "Over the course of 5 rounds you’ll have the option to spend money on various projects meant to prepare Lynmouth for the oncoming flood. Keep in mind how long they take to implement, as leaving a big project to the last minute may incur dire consequences."
     ],
     "options": [],
-    "event": []
+    "event": {}
   },
-  3: {
+  "3": {
     "date": "1932-08-15",
     "heading": "Round 1",
     "body": [
       "You now have the opportunity to implement a preventative project. This will help you as the disaster progresses.",
       "Please can the committee chair select two of the available options to present for a vote.."
     ],
-    "options": "${actions}",
-    "event": []
+    "options": ["${actions}"],
+    "event": {}
   },
-  4: {
+  "4": {
     "date": "1937-08-15",
     "heading": "Round 2",
     "body": [
       "You now have the opportunity to implement a preventative project. This will help you as the disaster progresses.",
       "Please can the committee chair select two of the available options to present for a vote.."
     ],
-    "options": "${actions}",
-    "event": [
+    "options": ["${actions}"],
+    "event": {
       "threatLevel": 1
-    ]
+    }
   },
-  5: {
+  "5": {
     "date": "1942-08-15",
     "heading": "Round 3",
     "body": [
       "You now have the opportunity to implement a preventative project. This will help you as the disaster progresses.",
       "Please can the committee chair select two of the available options to present for a vote.."
     ],
-    "options": "${actions}",
-    "event": []
+    "options": ["${actions}"],
+    "event": {}
   },
-  6: {
+  "6": {
     "date": "1947-08-15",
     "heading": "Round 4",
     "body": [
       "You now have the opportunity to implement a preventative project. This will help you as the disaster progresses.",
       "Please can the committee chair select two of the available options to present for a vote.."
     ],
-    "options": "${actions}",
-    "event": [
+    "options": ["${actions}"],
+    "event": {
       "threatLevel": 2
-    ]
+    }
   },
-  7: {
+  "7": {
     "date": "1952-08-15",
     "heading": "Round 5 (Case Study)",
     "body": [
@@ -78,11 +78,11 @@
       "When the flooding subsided and dawn broke, most of the town had been destroyed. Many of the houses had had their foundations ripped out from under them and a number of cars were dragged out to sea. Towns all over the coast had felt the wrath of the flooding but none more than Lynmouth."
     ],
     "options": [],
-    "event": [
+    "event": {
       "threatLevel": 3
-    ]
+    }
   },
-  8: {
+  "8": {
     "date": "2024-10-06",
     "heading": "Comparison",
     "body": [
@@ -94,6 +94,6 @@
       "rules",
       "exit"
     ],
-    "event": []
+    "event": {}
   }
 }
