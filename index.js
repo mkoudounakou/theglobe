@@ -54,7 +54,8 @@ client.once(Events.ClientReady, readyClient => {
 // interactions
 client.on(Events.InteractionCreate, interaction => {
   if (!interaction.isChatInputCommand()) return;
-	console.log(interaction);
+	console.info("[Event] Interaction Event");
+	console.info(interaction);
 	client.commands.get(interaction.commandName).execute();
 });
 

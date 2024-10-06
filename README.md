@@ -12,8 +12,8 @@ To achieve these goals, we’ve developed an interactive educational game center
 ## Authors
 
 - [@mkoudounakou](https://www.github.com/mkoudounakou)
-- [@georgesmith](https://www.github.com/404)
-- [@christophergrahamozanne](https://www.github.com/404)
+- [@SpeedySion](https://www.github.com/speedysion)
+- [@Wolfgang-VdB](https://www.github.com/wolfgang-vdb)
 
 ## Tech Stack
 
