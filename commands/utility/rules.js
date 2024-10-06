@@ -8,6 +8,9 @@ module.exports = {
 	name: "rules",
 	description: "rules rules rules",
 	execute: async(interaction) => {
-		await interaction.reply('rules');
+
+		console.info("[Info] Interaction Event");
+		console.info(interaction);
+		await interaction.reply('Over the course of 5 rounds you’ll have the option to spend money on various projects meant to prepare Lynmouth for the oncoming flood. Keep in mind how long they take to implement, as leaving a big project to the last minute may incur dire consequences.');
 	}
 }

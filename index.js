@@ -1,9 +1,24 @@
+require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
-const { Client, Collection, Events, GatewayIntentBits, REST, Routes } = require('discord.js');
+const {
+	Client,
+	Collection,
+	Events,
+	GatewayIntentBits,
+	REST,
+	Routes
+} = require('discord.js');
 
-// Create a new client instance
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+// instantiating client
+const client = new Client({
+	intents: [
+		GatewayIntentBits.Guilds,
+		GatewayIntentBits.GuildMembers,
+		GatewayIntentBits.GuildMessages,
+		GatewayIntentBits.MessageContent
+	]
+});
 
 // creating commands list
 client.commands = new Collection();
@@ -24,13 +39,12 @@ for (const folder of commandFolders) {
 		}
 	}
 }
-
 let commands = [...client.commands.values()];
 
+// registering slash commands
 const rest = new REST({ version: '10'}).setToken(process.env.TOKEN);
-
 (async () => {
-	//try {
+	try {
 		console.info("[Info] Registering slash commands..");
 		let commands = [...client.commands.values()];
 		console.log(commands);
@@ -40,23 +54,39 @@ const rest = new REST({ version: '10'}).setToken(process.env.TOKEN);
 			}
 		);
 		console.info("[Info] Slash commands registered successfully.");
-	/*} catch(error) {
+	} catch(error) {
 		console.error(`[Error] ${error}`)
-	}*/
+	}
 })();
 
-// When the client is ready
-client.once(Events.ClientReady, readyClient => {
+// on ready event
+client.once(Events.ClientReady, async(readyClient) => {
 	console.log(`[Log] Bot logged in as ${readyClient.user.tag}`);
 });
 
-// interactions
+// on interaction event
 client.on(Events.InteractionCreate, interaction => {
-  if (!interaction.isChatInputCommand()) return;
-	console.info("[Info] Interaction Event");
-	console.info(interaction);
-	client.commands.get(interaction.commandName).execute();
+	if(interaction.user.id === process.env.CLIENT_ID){
+		return;
+	}/*
+	else if(interaction.isButton()){
+		console.info("[Info] Button Interaction Event");
+		if(client.commands.hasOwnProperty(interaction.customId)){
+			client.commands.get(interaction.customId).execute(interaction)
+		}
+		else { //this would mean its a numbered action button
+			let prev = getConfig();
+			setConfig({"selectedOptions": [...prev, ...interaction.customId]});
+		}
+	}*/
+  else if (interaction.isChatInputCommand()){
+		console.info("[Info] Chat Input Interaction Event");
+		client.commands.get(interaction.commandName).execute(interaction);
+	}
+	else{
+		return;
+	}
 });
 
-// Log in to Discord with your client's token
+// login with client token
 client.login(process.env.TOKEN);

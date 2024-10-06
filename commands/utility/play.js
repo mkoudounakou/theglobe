@@ -1,19 +1,25 @@
-const { SlashCommandBuilder } = require('discord.js');
-const config = require('../../config.json');
+//const { SlashCommandBuilder } = require('discord.js');
+const getConfig = require('../../utils/getConfig.js');
 const setConfig = require('../../utils/setConfig.js');
+const getActions = require('../../utils/getActions.js');
 const setActions = require('../../utils/setActions.js');
 const narrative = require('../../content/narrative.json');
+const messenger = require('../../layout/messenger.js');
 
 module.exports = {
 	name: "play",
 	description: "Begin interactive learning exercise",
-	execute: async(interaction) => {
-		setConfig({"gameState": true});
-		setConfig({"narrative": 1});
+	execute: (interaction) => {
+		let i = getConfig().narrative++;
+		setConfig({
+			"gameState": true,
+			"narrative": i
+		});
 
-		for(i=0; i < narrative[config.narrative].length; i++){
-			await interaction.reply(narrative[config.narrative].body[i]);
+		for(let j=0; j < narrative[i].body.length; j++){
+			messenger.text({ content: narrative[i].body[j]});
 		}
-		await interaction.reply(narrative[config.narrative].options.Join(" / ") + "?");
+
+		await messenger.text({ content: narrative[i].options.join(" / ") + "?"});
 	}
 }
