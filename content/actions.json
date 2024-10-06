@@ -5,7 +5,8 @@
     "success": "You decided to reroute the river Lyn, once the rain began the river still broke its banks but due to its altered course far less water flowed through Lynmouth. This ultimately led to a substantial decrease in damage and loss of life.",
     "failure": "While you began to divert the river Lyn, the work wasn’t completed by the time the flood came. The channel helped divert some water once the Lyn broke its banks but didn't have a significant effect on the flood.",
     "cost": 600000,
-    "time": 4,
+    "readiness": 0,
+    "buildTime": 4,
     "durability": 0.6,
     "protects": {
       "people": 0.8,
@@ -18,7 +19,8 @@
     "success": "By the time the rain came and the valley flooded the Lyn Dam was ready. While the dam eventually failed as the water level rose above its walls, it gave the townspeople significant time to evacuate and ultimately slowed the river’s flow, preventing some damage.",
     "failure": "When the rain hit the Lyn Valley the dam was still under construction. The partially built dam provided little to no protection to the small town of Lynmouth.",
     "cost": 900000,
-    "time": 5,
+    "readiness": 0,
+    "buildTime": 5,
     "durability": 0.8,
     "protects": {
       "people": 0.9,
@@ -31,7 +33,8 @@
     "success": "With the newly planted trees and shrubs ready by the time the rain fell, they acted as an effective break and slowed the flow of water into the river Lyn. They also helped to anchor the soil around them, preventing debris from being swept up in the torrent. This ultimately reduced the intensity of the flooding in Lynmouth and prevented some damage within the town.",
     "failure": "The trees were still saplings when Lynmouth began to flood. Without their stabilising roots large chunks of peat and rock were swept downriver by the flood and wreaked havoc on Lynmouth.",
     "cost": 400000,
-    "time": 3,
+    "readiness": 0,
+    "buildTime": 3,
     "durability": 0.6,
     "protects": {
       "people": 0.7,
@@ -44,7 +47,8 @@
     "success": "Since you implemented new zoning laws in Lynmouth new buildings have been constructed further away from the river Lyn. This meant when the flood came more homes were further from danger and fewer were damaged.",
     "failure": "The decision to implement new zoning regulations came too late. While the few new homes built in safer, less at risk areas were largely safe, the vast majority of Lynmouth homes took the full force of the flood.",
     "cost": 100000,
-    "time": 2,
+    "readiness": 0,
+    "buildTime": 2,
     "durability": 0.6,
     "protects": {
       "people": 0.4,
@@ -57,7 +61,8 @@
     "success": "The newly installed flood warning system sounded before the torrent of floodwater hit Lynmouth, many of the residents evacuated with ample time, and although it did nothing to protect the buildings of the town it saved many lives.",
     "failure": "Without a functioning early warning system the people of Lynmouth were blindsided by the flooding. The lack of forewarning left many in their homes as the water rose.",
     "cost": 300000,
-    "time": 1,
+    "readiness": 0,
+    "buildTime": 1,
     "durability": 0.9,
     "protects": {
       "people": 0.6,
@@ -70,7 +75,8 @@
     "success": "Your levees were completed in time for the flood and bought the residents enough time to evacuate their homes. The higher banks kept the torrent of water back for longer and reduced the damage to the town's structures.",
     "failure": "Since the levees were only partially complete, they did not fully protect Lynmouth from the eventual flood. The Lyn broke its banks and ravaged the town.",
     "cost": 600000,
-    "time": 3,
+    "readiness": 0,
+    "buildTime": 3,
     "durability": 0.6,
     "protects": {
       "people": 0.5,
@@ -83,7 +89,8 @@
     "success": "The newly established wetlands acted as an adept buffer when the flood came. It slowed the rate of flooding significantly and reduced the overall damage dealt to Lynmouth.",
     "failure": "Without the wetlands being fully established, they proved far less effective at mitigating the eventual flood. They only slightly reduced damage in the town.",
     "cost": 600000,
-    "time": 2,
+    "readiness": 0,
+    "buildTime": 2,
     "durability": 0.4,
     "protects": {
       "people": 0.4,
@@ -96,7 +103,8 @@
     "success": "",
     "failure": "",
     "cost": 0,
-    "time": 0,
+    "readiness": 0,
+    "buildTime": 0,
     "durability": 0,
     "protects": {
       "people": 0,
