@@ -1,13 +1,10 @@
-const {
-  gameState, // boolean
-  narrative, // integer
-  budget, // integer
-  increment, // integer
-  percentage, // float
-  peopleProtected, // float
-  landProtected, // float
-  historicData.deaths, // integer
-  historicData.homelessness, // integer
-  historicData.buildingsLost, // integer
-  historicData.bridgesLost // integer
-} = require('./config.json');
+const fs = require('fs');
+const path = require('path');
+const prevConfig = require('../config.json');
+
+// set config file
+module.exports = function setConfig(pushRequest){
+  const nextConfig = { ...prevConfig, ...pushRequest };
+  const filePath = path.join(__dirname, '../config.js');
+  fs.writeFileSync( filePath, nextConfig);
+}
