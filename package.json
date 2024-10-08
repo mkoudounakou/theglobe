@@ -4,7 +4,7 @@
   "description": "Educational \"Choices Matter\" Game raising awareness of environmental issues within our local communities, created on the 5th-6th October 2024 for the NASA Space Apps Challenge (UK Exeter Event) in connection with the GLOBE Program (Global Learning and Observations to Benefit the Environment).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --inspect index.js",
     "start": "node index.js"
   },
   "repository": {
@@ -18,12 +18,12 @@
     "metoffice",
     "globe-project"
   ],
-  "author": "Maria Koudounakou (mkoudounakou@live.co.uk), Christopher Graham-Ozanne (c.grahamozanne@gmail.com), George Smith (gbs.psychology@gmail.com)",
+  "author": "Maria Koudounakou (@mkoudounakou), Christopher Graham-Ozanne (@SpeedySion), George Smith (@Wolfgang-VdB)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mkoudounakou/theglobe/issues"
+    "url": "https://github.com/mkoudounakou/timeLoopSimulator/issues"
   },
-  "homepage": "https://github.com/mkoudounakou/theglobe#readme",
+  "homepage": "https://github.com/mkoudounakou/timeLoopSimulator#readme",
   "dependencies": {
     "discord.js": "^14.16.3",
     "dotenv": "^16.4.5"

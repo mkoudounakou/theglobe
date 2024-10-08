@@ -1,4 +1,3 @@
-//const actions = require('../content/actions.json');
 const fs = require('fs');
 const path = require('path');
 
@@ -6,5 +5,5 @@ const path = require('path');
 module.exports = function setActions(){
   const filePath = path.join(__dirname, '../content/actions.json');
   let actions = fs.readFileSync(filePath, 'utf8');
-  return actions;
+  return JSON.parse(actions);
 }

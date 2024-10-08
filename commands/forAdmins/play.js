@@ -10,7 +10,8 @@ module.exports = {
 	name: "play",
 	description: "Begin interactive learning exercise",
 	execute: (interaction) => {
-		let i = getConfig().narrative++;
+		let config = getConfig();
+		let i = ++config.narrative;
 		setConfig({
 			"gameState": true,
 			"narrative": i
@@ -20,6 +21,6 @@ module.exports = {
 			messenger.text({ content: narrative[i].body[j]});
 		}
 
-		await messenger.text({ content: narrative[i].options.join(" / ") + "?"});
+		messenger.text({ content: narrative[i].options.join(" / ") + "?"});
 	}
 }

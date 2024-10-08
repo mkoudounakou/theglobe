@@ -1,4 +1,3 @@
-// const config = require('../config.json');
 const fs = require('fs');
 const path = require('path');
 
@@ -6,5 +5,5 @@ const path = require('path');
 module.exports = function setConfig(){
   const filePath = path.join(__dirname, '../config.json');
   let config = fs.readFileSync(filePath, 'utf8');
-  return config;
+  return JSON.parse(config);
 }
